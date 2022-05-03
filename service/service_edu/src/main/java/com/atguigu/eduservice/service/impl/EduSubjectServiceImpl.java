@@ -57,10 +57,7 @@ public class EduSubjectServiceImpl extends ServiceImpl<EduSubjectMapper, EduSubj
         QueryWrapper wrapper2=new QueryWrapper();
         wrapper2.ne("parent_id",0);
         List<EduSubject> twoSubjectList = baseMapper.selectList(wrapper2);
-        for (EduSubject s:twoSubjectList
-        ) {
-            System.out.println(s);
-        }
+
         //封装一级分类
         //创建list集合用于储存封装最终数据
 
